@@ -8,6 +8,8 @@ import './index.css'
 import App from './App.jsx'
 import LoginScreen from './LoginScreen.jsx'
 import tamaguiConfig from './tamagui.config'
+import DetailProduk from './DetailProduk.jsx';
+import Dashboard from './Dashboard.jsx';
 
 const token = localStorage.getItem("accessToken");
 if (token) {
@@ -21,6 +23,8 @@ createRoot(document.getElementById("root")).render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/login" element={<LoginScreen />} />
+          <Route path="/detail" element={<DetailProduk />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
     </TamaguiProvider>
