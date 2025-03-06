@@ -7,7 +7,9 @@ import axios from 'axios';
 import './index.css'
 import App from './App.jsx'
 import LoginScreen from './LoginScreen.jsx'
+import RegisterScreen from './RegisterScreen.jsx'
 import tamaguiConfig from './tamagui.config'
+import CartScreen from './CartScreen.jsx';
 
 const token = localStorage.getItem("accessToken");
 if (token) {
@@ -21,6 +23,8 @@ createRoot(document.getElementById("root")).render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/login" element={<LoginScreen />} />
+          <Route path="/register" element={<RegisterScreen />} />
+          <Route path="/cart" element={<CartScreen />} />
         </Routes>
       </BrowserRouter>
     </TamaguiProvider>

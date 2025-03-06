@@ -41,17 +41,17 @@ export default function App() {
 
         {/* Konten login */}
         <Text fontSize={26} fontWeight="bold" color="#343434" textAlign="center" marginTop={80}>
-          Welcome Back!
+          Hello Fellas!
         </Text>
         <Text color="#343434" textAlign="center" marginBottom={15}>
-          Please login to continue
+        Come on, register your account first
         </Text>
 
         <Input placeholder="Email" borderColor="$color6" padding={12} borderRadius={10} width="90%" maxWidth={400} />
         <Input placeholder="Password" secureTextEntry borderColor="$color6" marginTop={12} padding={12} borderRadius={10} width="90%" maxWidth={400} />
 
         <Button marginTop={20} bg="#273aff" pressStyle={{ bg: '$green10' }} width="90%" maxWidth={400} padding={12} borderRadius={10}>
-          <Text color="$color1" fontSize={16}>Sign In</Text>
+          <Text color="$color1" fontSize={16}>Sign Up</Text>
         </Button>
       </YStack>
     </Stack>
