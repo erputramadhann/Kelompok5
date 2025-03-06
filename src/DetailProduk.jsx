@@ -3,7 +3,7 @@ import { YStack, XStack, Image, Button, Text, Theme, Card, ScrollView, AnimatePr
 import Navbar from "./Navbar"
 
 export default function DetailProduk() {
-    const [selectedSize, setSelectedSize] = useState("S");
+    const [selectedSize, setSelectedSize] = useState("");
     const [loading, setLoading] = useState(true);
     const [showDetails, setShowDetails] = useState(false);
 
@@ -64,7 +64,7 @@ export default function DetailProduk() {
                                         {showDetails && (
                                             <Card
                                                 padding="$1"
-                                                borderWidth={1}
+                                                borderWidth={2}
                                                 borderRadius="$1"
                                                 borderColor="transparent"
                                                 backgroundColor="transparent"
@@ -102,16 +102,19 @@ export default function DetailProduk() {
                                         </YStack>
 
                                         {/* Price */}
+                                        <br />
                                         <Text fontSize="$7" fontWeight="700">$19.99</Text>
 
                                         {/* Stock Info */}
                                         <Text color="$red10" fontSize="$4" fontWeight="bold">Limited Stock</Text>
 
                                         {/* Actions */}
-                                        <br />
-                                        <Button size="$5" backgroundColor="$black" color="$color1" borderRadius="$4" bg="#273aff" pressStyle={{ bg: '$green10' }}>
-                                            ADD TO CART
-                                        </Button>
+                                            <Card>
+                                                <Button size="$5" backgroundColor="$black" color="$color1" borderRadius="$4" bg="#273aff" pressStyle={{ bg: '$green10' }}>
+                                                    ADD TO CART
+                                                </Button>
+                                            </Card>
+                                        
                                     </>
                                 )}
                             </AnimatePresence>
