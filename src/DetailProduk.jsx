@@ -21,10 +21,10 @@ export default function DetailProduk() {
                     <XStack gap="$6" flexWrap="wrap" width="auto" maxWidth={10000} justifyContent="center" alignItems="center">
 
                         {/* Product Images */}
-                        <YStack space="$4" justifyContent="center" alignItems="center">
+                        <YStack space="$4" justifyContent="center" alignItems="center" backgroundColor="transparent">
                             <AnimatePresence>
                                 {loading ? (
-                                    <YStack space="$4" animation="bouncy" opacity={0.6}>
+                                    <YStack space="$4" animation="bouncy">
                                         <Card width={310} height={450} backgroundColor="$gray5" borderRadius="$4" />
                                     </YStack>
                                 ) : (
@@ -117,7 +117,6 @@ export default function DetailProduk() {
                             </AnimatePresence>
                         </YStack>
                     </XStack>
-
                 </YStack>
             </ScrollView>
         </Theme>
