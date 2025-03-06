@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Stack, Input, Button, Text, YStack, Image } from 'tamagui';
-import { motion } from 'framer-motion';
+
 
 export default function App() {
   const [animateLogo, setAnimateLogo] = useState(false);

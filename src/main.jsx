@@ -10,6 +10,7 @@ import LoginScreen from './LoginScreen.jsx'
 import RegisterScreen from './RegisterScreen.jsx'
 import tamaguiConfig from './tamagui.config'
 import CartScreen from './CartScreen.jsx';
+import Product from './Product.jsx';
 
 const token = localStorage.getItem("accessToken");
 if (token) {
@@ -25,6 +26,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/login" element={<LoginScreen />} />
           <Route path="/register" element={<RegisterScreen />} />
           <Route path="/cart" element={<CartScreen />} />
+          <Route path="/product" element={<Product />} />
         </Routes>
       </BrowserRouter>
     </TamaguiProvider>
